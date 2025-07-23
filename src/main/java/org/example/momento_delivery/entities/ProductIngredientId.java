@@ -2,14 +2,16 @@ package org.example.momento_delivery.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.Hibernate;
 
 import java.util.Objects;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
 @Embeddable
 public class ProductIngredientId implements java.io.Serializable {
     private static final long serialVersionUID = -1240064297013529836L;

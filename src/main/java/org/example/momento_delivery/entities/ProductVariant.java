@@ -14,6 +14,7 @@ import java.math.BigDecimal;
 @Table(name = "product_variants")
 public class ProductVariant {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Integer id;
 
